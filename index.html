@@ -355,7 +355,9 @@
       </ul>
     </div>
 
-    <form class="lead-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST" novalidate>
+    <form class="lead-form" name="lead-form" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="lead-form" />
+      <p style="display:none"><label>Don't fill this out: <input name="bot-field" /></label></p>
       <h3>📩 احجز معاينتك الآن</h3>
 
       <label>
@@ -386,9 +388,6 @@
         رسالتك (اختياري)
         <textarea name="message" rows="3" placeholder="مثلاً: أرغب بمعاينة الفيلا يوم الجمعة"></textarea>
       </label>
-
-      <input type="hidden" name="_next" value="thank-you.html" />
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
       <label class="check">
         <input type="checkbox" name="agree" required />
