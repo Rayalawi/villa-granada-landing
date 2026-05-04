@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 150" fill="none">
+  <defs>
+    <linearGradient id="regaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d8a8a"/>
+      <stop offset="50%" stop-color="#0a5d8c"/>
+      <stop offset="100%" stop-color="#063576"/>
+    </linearGradient>
+  </defs>
+  <!-- Diamond/chevron shape -->
+  <g transform="translate(10,10)">
+    <path d="M50 0 L75 25 L60 25 L50 18 L40 25 L25 25 Z" fill="#0d8a8a"/>
+    <path d="M30 30 L70 30 L65 38 L35 38 Z" fill="#0a6f8c"/>
+    <path d="M33 42 L67 42 L62 50 L38 50 Z" fill="#0a5d8c"/>
+    <path d="M36 54 L64 54 L59 62 L41 62 Z" fill="#085088"/>
+    <path d="M39 66 L61 66 L56 74 L44 74 Z" fill="#063576"/>
+    <path d="M22 78 L78 78 L50 130 Z" fill="#063576"/>
+  </g>
+  <!-- REGA text -->
+  <text x="120" y="65" font-family="Arial, sans-serif" font-size="56" font-weight="900" fill="#020f1f" letter-spacing="2">REGA</text>
+  <!-- Arabic name -->
+  <text x="120" y="100" font-family="Tajawal, Arial, sans-serif" font-size="22" font-weight="700" fill="#063576">الهيئة العامة للعقار</text>
+  <!-- English name -->
+  <text x="120" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#063576" letter-spacing="1">REAL ESTATE GENERAL AUTHORITY</text>
+</svg>

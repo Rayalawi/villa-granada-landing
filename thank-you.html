@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>شكراً لتواصلك - فيلا غرناطة</title>
+<meta name="description" content="تم استلام طلبك بنجاح، سيتواصل معك المالك خلال دقائق." />
+<meta name="robots" content="noindex, follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+
+<!-- Google Ads conversion tag - replace AW-XXXXXXX/CONV_LABEL with your IDs -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXX');
+  gtag('event', 'conversion', {'send_to': 'AW-XXXXXXX/CONV_LABEL'});
+</script>
+-->
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span class="topbar-tag">✅ تم الاستلام بنجاح</span>
+    <a href="index.html" class="topbar-phone">← العودة للرئيسية</a>
+  </div>
+</div>
+
+<main class="thank-you">
+  <div class="container ty-content">
+    <div class="ty-icon">✅</div>
+    <h1>شكراً لتواصلك معنا!</h1>
+    <p class="ty-lead">تم استلام طلبك بنجاح. <b>سيتواصل معك المالك مباشرة خلال دقائق</b> لتنسيق المعاينة ومناقشة التفاصيل.</p>
+
+    <div class="ty-steps">
+      <h3>ماذا يحدث الآن؟</h3>
+      <div class="ty-step"><span class="ty-num">1</span><div><b>سنتصل بك</b><p>سيتواصل المالك معك على الرقم الذي أدخلته خلال أقل من 30 دقيقة (في ساعات العمل).</p></div></div>
+      <div class="ty-step"><span class="ty-num">2</span><div><b>تنسيق المعاينة</b><p>نُحدّد معك موعدًا مناسبًا لمعاينة الفيلا على الواقع.</p></div></div>
+      <div class="ty-step"><span class="ty-num">3</span><div><b>الاتفاق والإفراغ</b><p>إذا أعجبتك الفيلا، نتفاوض على السعر ونُنهي الإفراغ خلال أسبوع.</p></div></div>
+    </div>
+
+    <div class="ty-actions">
+      <p><b>لا تريد الانتظار؟</b> تواصل مباشرة الآن:</p>
+      <div class="hero-cta">
+        <a href="tel:+966544401478" class="btn btn-primary" data-trigger="call" data-trigger-source="thank-you">📞 اتصل الآن</a>
+        <a href="https://wa.me/966544401478?text=مرحباً، أرسلت طلبًا للتو وأرغب بالتواصل المباشر" target="_blank" rel="noopener" class="btn btn-whatsapp" data-trigger="whatsapp" data-trigger-source="thank-you">💬 واتساب الآن</a>
+      </div>
+    </div>
+
+    <div class="ty-tip">
+      <h4>💡 معلومة مفيدة</h4>
+      <p>الفيلا في موقع استراتيجي قرب <b>جامعة الأميرة نورة</b> و<b>إكسبو 2030</b> و<b>قطار الرياض</b> - فرصة استثمارية الأسعار فيها تتحرك بسرعة. لا تتأخر بالقرار!</p>
+    </div>
+
+    <a href="index.html" class="legal-back">← العودة لصفحة الفيلا</a>
+  </div>
+</main>
+
+<a href="https://wa.me/966544401478" target="_blank" rel="noopener" class="float-wa" aria-label="واتساب" data-trigger="whatsapp" data-trigger-source="float">💬</a>
+<a href="tel:+966544401478" class="float-call" aria-label="اتصال" data-trigger="call" data-trigger-source="float">📞</a>
+
+<script>
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('[data-trigger]');
+    if(!t) return;
+    var trigger = t.dataset.trigger;
+    var source = t.dataset.triggerSource || 'unknown';
+    (window.dataLayer = window.dataLayer || []).push({event:'cta_click', trigger:trigger, source:source});
+    if (typeof gtag === 'function') gtag('event', trigger + '_click', { source: source });
+    if (typeof fbq === 'function') fbq('trackCustom', trigger === 'call' ? 'Call' : 'WhatsAppClick', { source: source });
+  }, false);
+
+  /* Optional: fire conversion ping once on thank-you load — uncomment when ready
+  if (typeof gtag === 'function') gtag('event','conversion',{send_to:'AW-XXXXXXX/CONV_LABEL'});
+  if (typeof fbq === 'function') fbq('track','Lead'); */
+</script>
+
+</body>
+</html>
